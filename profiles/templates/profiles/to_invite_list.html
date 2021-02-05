@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invite Friends</title>
+</head>
+<body>
+{% block content %}
+    <ul>
+    {% for item in qs %}
+    <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
+</body>
+</html>
